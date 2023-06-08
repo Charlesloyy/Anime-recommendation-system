@@ -1,5 +1,5 @@
 # Anime-recommendation-system
-The process involves: Webscraping the data from IMDB website including all the various system, 
+The process involves: Webscraping the data from GOGOanime website including all the various system, 
 Converting and saving into a csv file, 
 Using Sklearn liberies such as TfidfVectorizer,cosine_similarity for the data processing 
 and difflib to find the best match using the movie title.
