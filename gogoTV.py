@@ -4,8 +4,8 @@ from PIL import Image
 import difflib
 
 st.header("Anime Recommendation system")
-foods = pickle.load(open("dataset.pkl", "rb"))
 similar = pickle.load(open("similarity.pkl", "rb"))
+foods = pickle.load(open("dataset.pkl", "rb"))
 foods_list = foods["title"].values
 
 selected_value = st.selectbox("Search", foods_list)
