@@ -1,11 +1,11 @@
 import streamlit as st
-import pandas as pd
+import pickle
 from PIL import Image
 import difflib
 
 st.header("Anime Recommendation system")
-foods = pd.read_pickle(open("dataset", "rb"))
-similar = pd.read_pickle(open("similarity.pkl", "rb"))
+foods = pickle.load(open("dataset", "rb"))
+similar = pickle.load(open("similarity.pkl", "rb"))
 foods_list = foods["title"].values
 
 selected_value = st.selectbox("Search", foods_list)
